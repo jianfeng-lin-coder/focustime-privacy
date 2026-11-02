@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FocusTime privacy policy</title>
+<style>
+:root{--bg:#ECEEF1;--panel:#fff;--ink:#12151A;--dim:#56606C;--line:rgba(150,95,0,.35);}
+@media (prefers-color-scheme: dark){:root{--bg:#333A45;--panel:#3D4554;--ink:#F3F4F6;--dim:#BCC4CF;--line:rgba(255,176,0,.42);}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,sans-serif;}
+main{max-width:760px;margin:40px auto;padding:24px 28px;background:var(--panel);border:1px solid var(--line);}
+table{border-collapse:collapse;width:100%} td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+code{font-family:ui-monospace,monospace;font-size:13px} em{color:var(--dim)}
+</style>
+</head>
+<body><main>
+<h1>FocusTime Privacy Policy</h1>
+<p><em>Last updated: 2026-11-01</em></p>
+<p>FocusTime helps you understand and limit the time you spend on websites.</p>
+<h2>What FocusTime stores</h2>
+<ul>
+<li>The <strong>domains</strong> (sites) you visit, such as <code>youtube.com</code>, and <strong>how long</strong> you are active on each.</li>
+<li>Per-hour totals, visit (session) start and end times, and what ended each visit (for example a tab switch).</li>
+<li>Your settings, limits, categories, and a log of limit events and &quot;One more minute&quot; requests.</li>
+</ul>
+<p>FocusTime does <strong>not</strong> store full URLs, page titles, page content, or anything you type on websites.</p>
+<h2>Where it is stored</h2>
+<p>Everything is stored <strong>locally</strong> on your device using Chrome&#x27;s extension storage (<code>chrome.storage.local</code>).</p>
+<ul>
+<li>No data is sent anywhere. FocusTime makes no network requests.</li>
+<li>There are no accounts, no analytics, no ads, no remote code and no third-party services.</li>
+<li>Your data is never sold or transferred.</li>
+</ul>
+<h2>Incognito</h2>
+<p>Chrome does not run extensions in incognito windows unless you turn on &quot;Allow in Incognito&quot; for FocusTime.</p>
+<p>If you do, incognito browsing is tracked and stored in the same way as normal browsing, and counts toward your limits.</p>
+<h2>Your control</h2>
+<ul>
+<li><strong>Export</strong> all of your data as JSON or CSV from Settings → Data.</li>
+<li><strong>Clear history</strong> deletes all days before today. Uninstalling FocusTime deletes all of its data.</li>
+<li>Choose a retention period (forever, 1 year or 90 days) in Settings.</li>
+</ul>
+<h2>Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Save settings, limits and usage history locally, indefinitely.</td></tr>
+<tr><td><code>alarms</code></td><td>Periodic saves, the daily reset and limit checks.</td></tr>
+<tr><td><code>idle</code></td><td>Stop counting when you are away or the screen is locked.</td></tr>
+<tr><td><code>declarativeNetRequest</code></td><td>Redirect a site to the block page once its daily limit is reached.</td></tr>
+<tr><td>Host access to <code>http(s)://*/*</code></td><td>Know which site the active tab is on, redirect blocked sites, detect video playback and show in-page limit warnings.</td></tr>
+</table>
+</main></body>
+</html>
